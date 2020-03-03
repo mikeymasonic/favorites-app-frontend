@@ -41,7 +41,7 @@ export default withRouter(class List extends Component {
                         <div>{record.artist}</div>
                         <div>{record.name}</div>
                         <div>{record.url}</div>
-                        {/* <div>{record.image[2].#text}</div> */}
+                        <div><img alt="record" src={record.image[2]['#text']}/></div>
                         {
                             this.props.location.pathname !== '/favorites' 
                             // only render a button or star on the search page
